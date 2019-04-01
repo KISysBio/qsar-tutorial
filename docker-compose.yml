@@ -1,0 +1,11 @@
+version: "3"
+services:
+
+  modsar:
+    build:
+      context: notebooks
+      dockerfile: Dockerfile
+    volumes:
+      - ./notebooks:/mnt/code
+    ports:
+      - 8888:8888
